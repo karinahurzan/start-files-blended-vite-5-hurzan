@@ -24,6 +24,7 @@ const Home = () => {
         {!exchangeInfo && !isError && (
           <Heading info title="What currencies do you want to exchange?🙂" />
         )}
+
         {exchangeInfo && <ExchangeInfo {...exchangeInfo} />}
         {isLoading && <Loader />}
         {isError && (
